@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(https://static.vecteezy.com/system/resources/previews/007/773/959/non_2x/e-commerce-and-online-shopping-icons-with-white-background-free-vector.jpg);
+        }
+        #logo{
+            height: 10%;
+            width: 30%;
+            margin: 0 35%;
+            border: 2px solid black;
+            background: linear-gradient(0,#e76767,#ff0);
+        }
+        #logo:hover{
+           
+            border-radius: 0 30px ;
+            background-color: #000;
+            background: linear-gradient(0,#ff0,#e76767);
+        }
+        .h2{
+            
+            font-family:  Georgia, serif;
+        }
+        .content{
+            height: 550px;
+            width: 29%;
+            margin: 0 35.50%;
+            border: 2px solid black;
+            border-radius: 5px;
+            background: linear-gradient(0, #7aede0,#c363fb);
+           
+        }
+        .content:hover{
+            background: linear-gradient(0,#c363fb, #7aede0);
+        }
+        .xx{
+            width: 90%;
+            margin:0 5%;
+            height: 30px;
+            border-radius: 10px 0px;
+            
+        }
+        #btn{
+            width: 90%;
+            margin:0 5%;
+            height: 30px;
+            border-radius: 10px;
+            background-color: #fff;
+            border: 2px solid yellow;
+            cursor: pointer;
+            font-size: medium;
+            font-weight: bold;
+            font-family:  Georgia;
+        }
+        #btn:hover{
+            background-color:yellow;
+        }
+        label{
+            font-size: large;
+            font-weight:500;
+        }
+
+    </style>
+</head>
+<body>
+    <img  id="logo"src="nlw.png" alt="logo">
+    <form action="index.html">
+        <div class="content">
+           <center> <h2>Create account</h2></center> <br>
+           <label for="name">Your name</label> <br>
+            <input type="text" class="xx"  id="name" name="name" placeholder="First and last name"> <br>
+            <label for="">Moile number or email</label> <br>
+            <input type="email" class="xx" id="rid" name="M" > <br>
+            <label for="pas">Password</label><br>
+            <input type="password" class="xx" id="pas" name="password1" placeholder="At least 6 charcters"> <br>
+            <span id="impmsg">Passwords must be at least 6 characters.</span> <br> <br>
+            <label for="pas2">Re-enter Password</label><br>
+            <input type="password" class="xx" id="pas2" name="password2"> <br> <br>
+            <button type="submit" id="btn">Continue</button>
+        </div>
+    </form>
+</body>
+</html>

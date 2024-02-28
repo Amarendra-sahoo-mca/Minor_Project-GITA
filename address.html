@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+    <style>
+        *{
+            scroll-behavior: smooth;
+        }
+        body{
+           
+            background-color: rgba(237, 242, 190, 0.537);
+        }
+        h2{
+            align-items:center;
+            justify-content: center;
+             padding: 1% 29%; 
+        }
+        .titel{
+          
+            margin-top: -5px;
+            margin-left: 15%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: larger;
+            background: linear-gradient(0,#e76767,#ff0);
+            border-radius: 100px;
+            width: 70%;
+            border: 1px solid black;
+        }
+        .titel:hover{
+            background: linear-gradient(0,#ff0,#e76767)
+        }
+        .A{
+            padding: 10px 20px;
+           font-weight: bold;
+           font-size: medium;
+        }
+        .b{
+            padding-left: 157px;
+        }
+       
+        .buttons{
+            display: flex;
+            margin-left: 10%;
+            padding-right: 10%;
+            border-radius: 10px;
+        }
+        .content{
+            height: 582px;
+          
+            background-image: url(https://img.freepik.com/free-vector/hand-drawn-shopping-pattern-design_23-2149628702.jpg?size=626&ext=jpg&ga=GA1.1.1037415836.1700650967&semt=ais);
+        }
+        .input{
+            background-color: #fff;
+            border-radius: 10px;
+            border: 2px solid black;
+            margin-top: 0%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            margin-left: 36%;
+            margin-right: 39%;
+            padding-left: 10px;
+            /* float:bottom; */
+        }
+        .input:hover{
+            background-color: #fadbdb;
+        }
+        .save{
+            padding-left: 25px;
+        }
+        .btn{
+            width: 100px;
+            height: 35px;
+            margin-top: 15px;
+            margin-right: 70px;
+            border-radius: 5px;
+            margin-left: -20px;
+            margin-bottom: 25px;
+            font-weight: bold;
+            color: black;
+            cursor: pointer;
+            background-color:rgb(180, 204, 249);
+        }
+        .btn:hover{
+            background-color: gold;
+        }
+        .save{
+            margin-top: 15px;
+            margin-left: 9px;
+            width: 325px;
+            height: 35px;
+            border-radius: 10px;
+            font-weight: bold;
+            background-color:rgb(180, 204, 249);
+            cursor: pointer;
+        }
+        .save:hover{
+            background-color: gold;
+        }
+        .in{
+            cursor: pointer;
+        }
+        .head{
+            background-image: url(https://img.freepik.com/premium-vector/pattern-about-shopping_1061-495.jpg?w=740);
+        }
+    </style>
+</head>
+<body>
+   <div class="head "><div class="titel"><center><h2>Enter Your Delivery Address</h2></center></div> </div><hr>
+    <div class="content">
+       <div class="input">
+        <form action="Home.html">
+     <div class="name A">  NAME*  <input type="text"  style="margin-left: 78px;" placeholder="Enter Full Name" name="name"></div> 
+       <div class="num A">PHONE NUMBER* <input type="number" placeholder="Enter Phone number"name="num"></div> 
+       <div class="pin A b"><input type="text"  placeholder="enter pin code*"name="pin"></div>
+       <div class="state A">SELECT STATE*
+        <select  style="margin-left: 23px;" name="state"class="in" ><option selected>--Select--</option>
+        <option value="ANDHRAPRADESH">ANDHRAPRADESH</option>
+        <option value="ARUNACHALPRADESH">ARUNACHALPRADESH</option>
+        <option value="ASSAM">ASSAM</option>
+        <option value="BIHAR">BIHAR</option>
+        <option value="CHHATTISGARH">CHHATTISGARH</option>
+        <option value="GOA">GOA</option>
+        <option value="GUJARAT">GUJARAT</option>
+        <option value="HARYANA">HARYANA</option>
+        <option value="HIMACHALPRADESH">HIMACHALPRADESH</option>
+        <option value="JHARKHAND">JHARKHAND</option>
+        <option value="KARNATAK">KARNATAK</option>
+        <option value="KERALA">KERALA</option>
+        <option value="MADHYAPRADESH">MADHYAPRADESH</option>
+        <option value="MAHARASHTRA">MAHARASHTRA</option>
+        <option value="MANIPUR">MANIPUR</option>
+        <option value="MEGHLAYA">MEGHLAYA</option>
+        <option value="MIZORAM">MIZORAM</option>
+        <option value="NAGALAND">NAGALAND</option>
+        <option value="ODISHA" >ODISHA</option>
+        <option value="PUNJAB">PUNJAB</option>
+        <option value="RAJASTHAN">RAJASTHAN</option>
+        <option value="SIKKIM">SIKKIM</option>
+        <option value="TAMILNADU">TAMILNADU</option> 
+        <option value="TELENGANA">TELENGANA</option>
+        <option value="TRIPURA">TRIPURA</option>
+        <option value="UTTARAKHAND">UTTARAKHAND</option>
+        <option value="UTTARPRADESH">UTTARPRADESH</option>
+        <option value="WESTBENGAL">WESTBENGAL</option>
+        </select></div>
+       <div class="city A b"><input type="text" placeholder="enter City*" name="city" ></div>
+       <div class="hno A b"><input type="number" placeholder="enter House Number*" name="H.no" ></div>
+       <div class="rdna A b"><input type="text" placeholder="Road name, Area, Colony*" name="Lmark" ></div>
+       <!-- <div class="buttons">
+       <div ><input type="button" class="btn A" placeholder="Home"></div>
+       <div><button  class="btn A">Work</button></div></div> -->
+       <label for="AT" class="A">Enter Your Location Type*</label>
+       <select name="loc" id="AT" class="in">
+        <option value="">--Select--</option>
+        <option value="H">HOME</option>
+        <option value="O">OFFICE</option>
+       </select>
+
+       <div><button class="save">Save Address</button></div>
+    </form></div>
+    </div>
+</body>
+</html>
